@@ -6,7 +6,7 @@
 
 Application::Application()
 {
-	DebugLayer::GetInstance().SetOutputDestination(OutputDestination::Text);
+	DebugLayer::GetInstance().SetOutputDestination(OutputDestination::Window);
 }
 
 
@@ -27,7 +27,6 @@ bool Application::Initialize()
 	// 終了イベントを無効化
 	SetWindowUserCloseEnableFlag(false);
 
-	DebugLayer::GetInstance().PrintDebugMessage("初期化処理が正常に終了しました.");
 
 	return true;
 }
